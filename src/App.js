@@ -1,5 +1,5 @@
 import "./App.css";
-import CounterV2 from "./component/counter.js";
+import Counter from "./component/Counter.js";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,7 +17,7 @@ function App() {
           <button>Add counter</button>
         </div>
         <div>
-          <CounterV2 />
+          <Counter />
         </div>
       </main>
       <footer>

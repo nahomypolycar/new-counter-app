@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./App.css";
+import "../App.css";
 
-const counter = () => {
+const CounterV2 = () => {
   const [counter, setCounter] = useState(0);
 
   return (
@@ -35,4 +35,4 @@ const counter = () => {
   );
 };
 
-export default counter;
+export default CounterV2;
