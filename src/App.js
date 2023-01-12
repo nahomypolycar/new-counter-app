@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CounterV2 from "./component/counter.js";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faStopwatch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+library.add(faStopwatch);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <FontAwesomeIcon icon="stopwatch" />
+        <h1>React Counter</h1>
       </header>
+      <main>
+        <div>
+          <button>Add counter</button>
+        </div>
+        <div>
+          <CounterV2 />
+        </div>
+      </main>
+      <footer>
+        <p>Made with React at Le Reacteur by Nahomy Polycar</p>
+      </footer>
     </div>
   );
 }
